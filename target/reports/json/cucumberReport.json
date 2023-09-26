@@ -1,0 +1,100 @@
+[
+  {
+    "line": 4,
+    "elements": [
+      {
+        "line": 10,
+        "name": "Acessando tela de contato do Brasil",
+        "description": "",
+        "id": "acessando-tela-de-contato-da-softexpert;acessando-tela-de-contato-do-brasil",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 7073876600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "que estou na tela inicial",
+            "match": {
+              "location": "ContatoSteps.que_estou_na_tela_inicial()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 1973786000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "clico no botão Contato",
+            "match": {
+              "location": "ContatoSteps.clico_no_botão_Contato()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 78383400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "clico no botão América do Sul",
+            "match": {
+              "location": "ContatoSteps.clico_no_botão_América_do_Sul()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 183648600,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "clico no botão Brasil",
+            "match": {
+              "location": "ContatoSteps.clico_no_botão_Brasil()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 46478000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "a aplicação deve exibir o contato da SoftExpert no Brasil",
+            "match": {
+              "location": "ContatoSteps.a_aplicação_deve_exibir_o_contato_da_SoftExpert_no_Brasil()"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@contato"
+          },
+          {
+            "name": "@contato-brasil"
+          }
+        ]
+      }
+    ],
+    "name": "Acessando tela de contato da SoftExpert",
+    "description": "    Eu como possível cliente\n    Quero acessar a tela de contato da SoftExpert\n    Para poder entrar em contato com o setor de vendas",
+    "id": "acessando-tela-de-contato-da-softexpert",
+    "keyword": "Funcionalidade",
+    "uri": "src/test/resources/features/contato.feature",
+    "tags": [
+      {
+        "name": "@contato",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 3
+        }
+      }
+    ]
+  }
+]
