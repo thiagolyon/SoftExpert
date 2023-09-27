@@ -1,4 +1,4 @@
-name: Smoke Tests - PR
+name: Schedule Tests - PR
 
 on:
   schedule:
