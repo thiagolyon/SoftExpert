@@ -1,16 +1,16 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/trabalhe.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/contato.feature");
 formatter.feature({
-  "name": "Cadastrando para vaga de emprego",
-  "description": "    Eu como candidato para vaga\n    Quero me candidatar na vaga de analista de Testes Automatizados\n    Para fazer parte da equipe da SoftExpert",
+  "name": "Acessando tela de contato da SoftExpert",
+  "description": "    Eu como possível cliente\n    Quero acessar a tela de contato da SoftExpert\n    Para poder entrar em contato com o setor de vendas",
   "keyword": "Funcionalidade"
 });
 formatter.scenario({
-  "name": "Cadastrando para a vaga de analista de testes automatizados",
+  "name": "Acessando tela de contato do Brasil",
   "description": "",
   "keyword": "Cenário",
   "tags": [
     {
-      "name": "@trabalhe-conosco"
+      "name": "@contato-brasil"
     }
   ]
 });
@@ -22,76 +22,55 @@ formatter.match({
   "location": "ContatoSteps.que_estou_na_tela_inicial()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.junit.ComparisonFailure: Erro ao validar mensagens! expected:\u003c...l para a sua empresa[s]\u003e but was:\u003c...l para a sua empresa[]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat support.Commands.checkMessage(Commands.java:57)\r\n\tat pages.ContatoPage.acessarTelaInicial(ContatoPage.java:21)\r\n\tat steps.ContatoSteps.que_estou_na_tela_inicial(ContatoSteps.java:18)\r\n\tat ✽.que estou na tela inicial(src/test/resources/features/contato.feature:10)\r\n",
+  "status": "failed"
 });
 formatter.step({
-  "name": "clico no botão Trabalhe Conosco",
+  "name": "clico no botão Contato",
   "keyword": "Quando "
 });
 formatter.match({
-  "location": "TrabalheSteps.clico_no_botão_Trabalhe_Conosco()"
+  "location": "ContatoSteps.clico_no_botão_Contato()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "clico no botão Ver Vagas Abertas",
+  "name": "clico no botão América do Sul",
   "keyword": "E "
 });
 formatter.match({
-  "location": "TrabalheSteps.clico_no_botão_Ver_Vagas_Abertas()"
+  "location": "ContatoSteps.clico_no_botão_América_do_Sul()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "clico no botão Pessoa analista de Testes automatizados",
+  "name": "clico no botão Brasil",
   "keyword": "E "
 });
 formatter.match({
-  "location": "TrabalheSteps.clico_no_botão_Pessoa_analista_de_Testes_automatizados()"
+  "location": "ContatoSteps.clico_no_botão_Brasil()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "clico no botão Apply",
-  "keyword": "E "
-});
-formatter.match({
-  "location": "TrabalheSteps.clico_no_botão_Apply()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "preencho os dados solicitados",
-  "keyword": "E "
-});
-formatter.match({
-  "location": "TrabalheSteps.preencho_os_dados_solicitados()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "clico no botão Submit Application",
-  "keyword": "E "
-});
-formatter.match({
-  "location": "TrabalheSteps.clico_no_botão_Submit_Application()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "a aplicação deve exibir a mensagem de sucesso",
+  "name": "a aplicação deve exibir o contato da SoftExpert no Brasil",
   "keyword": "Então "
 });
 formatter.match({
-  "location": "TrabalheSteps.a_aplicação_deve_exibir_a_mensagem_de_sucesso()"
+  "location": "ContatoSteps.a_aplicação_deve_exibir_o_contato_da_SoftExpert_no_Brasil()"
 });
 formatter.result({
+  "status": "skipped"
+});
+formatter.embedding("image/png", "embedded0.png");
+formatter.after({
+  "status": "passed"
+});
+formatter.embedding("image/png", "embedded1.png");
+formatter.after({
   "status": "passed"
 });
 });

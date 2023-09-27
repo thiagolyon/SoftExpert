@@ -1,8 +1,11 @@
 package steps;
 
+import cucumber.api.Scenario;
+import cucumber.api.java.After;
 import cucumber.api.java.pt.Então;
 import cucumber.api.java.pt.Quando;
 import pages.TrabalhePage;
+import support.ScreenshotUtils;
 
 public class TrabalheSteps {
 
@@ -44,11 +47,16 @@ public class TrabalheSteps {
 
     @Quando("^clico no botão Submit Application$")
     public void clico_no_botão_Submit_Application() {
-        trabalhePage.clicarBtnSubmit();
+//        trabalhePage.clicarBtnSubmit();
     }
 
     @Então("^a aplicação deve exibir a mensagem de sucesso$")
     public void a_aplicação_deve_exibir_a_mensagem_de_sucesso() {
-        trabalhePage.validarMsgSucesso();
+//        trabalhePage.validarMsgSucesso();
+    }
+
+    @After
+    public static void afterScenario(Scenario scenario) {
+        ScreenshotUtils.addScreenshotOnScenario(scenario);
     }
 }

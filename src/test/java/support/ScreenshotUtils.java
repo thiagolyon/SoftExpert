@@ -10,7 +10,7 @@ public class ScreenshotUtils {
 
     public static void addScreenshotOnScenario(Scenario scenario) {
         System.out.println("===================");
-        System.out.println("Teste que executado: " + scenario.getName());
+        System.out.println("Teste executado: " + scenario.getName());
         System.out.println("Status: " + scenario.getStatus());
         System.out.println("Tag: " + scenario.getSourceTagNames());
         System.out.println("===================");
