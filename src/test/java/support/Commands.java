@@ -22,7 +22,7 @@ public class Commands extends RunCucumber {
         System.out.println("##################################");
         try {
             System.out.println("Vai clicar no elemento: " + element);
-            waitElementBeClickable(element, 10);
+            waitElementBeClickable(element, 15);
             getDriver().findElement(element).click();
             System.out.println("Clicou no elemento: " + element);
         } catch (Exception error){
