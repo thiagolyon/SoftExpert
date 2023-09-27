@@ -13,7 +13,7 @@ public class ContatoPage extends RunCucumber {
     private By btnContato = By.xpath("//li[@id='menu-item-40353']/a[text()='Contato']");
     private By btnAmericaSul = By.xpath("//a[@class='w-tabs-item-h']/span[text()='América do Sul']");
     private By btnBrasil = By.xpath("//div[@class='wpb_wrapper']/a[text()='Brasil']");
-    private By tela = By.xpath("/html/body/div[1]/div[1]/div[2]/div/h1");
+    private By tela = By.cssSelector("span.w-copyright");
 
 
     public void acessarTelaInicial() {
@@ -34,6 +34,7 @@ public class ContatoPage extends RunCucumber {
     }
 
     public void validarTelaBrasil() {
-        checkMessage(tela, "Contato");
+        checkMessage(tela, "Copyright © SoftExpert Software for Performance Excellence.\n" +
+                "All trademarks, trade names, service marks, and logos referenced herein belong to their respective companies.");
     }
 }
