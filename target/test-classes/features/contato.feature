@@ -1,5 +1,6 @@
 # language: pt
 
+  @contato
   Funcionalidade: Acessando tela de contato da SoftExpert
     Eu como possível cliente
     Quero acessar a tela de contato da SoftExpert
