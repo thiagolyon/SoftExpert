@@ -1,16 +1,16 @@
 [
   {
-    "line": 3,
+    "line": 4,
     "elements": [
       {
-        "line": 9,
-        "name": "Cadastrando para a vaga de analista de testes automatizados",
+        "line": 10,
+        "name": "Acessando tela de contato do Brasil",
         "description": "",
-        "id": "cadastrando-para-vaga-de-emprego;cadastrando-para-a-vaga-de-analista-de-testes-automatizados",
+        "id": "acessando-tela-de-contato-da-softexpert;acessando-tela-de-contato-do-brasil",
         "after": [
           {
             "result": {
-              "duration": 3197900,
+              "duration": 1295200,
               "status": "passed"
             },
             "match": {
@@ -19,7 +19,7 @@
           },
           {
             "result": {
-              "duration": 36400,
+              "duration": 81400,
               "status": "passed"
             },
             "match": {
@@ -32,10 +32,10 @@
         "steps": [
           {
             "result": {
-              "duration": 10192218100,
+              "duration": 7576524400,
               "status": "passed"
             },
-            "line": 10,
+            "line": 11,
             "name": "que estou na tela inicial",
             "match": {
               "location": "ContatoSteps.que_estou_na_tela_inicial()"
@@ -44,101 +44,77 @@
           },
           {
             "result": {
-              "duration": 15552126000,
+              "duration": 15515032100,
               "status": "passed"
             },
-            "line": 11,
-            "name": "clico no botão Trabalhe Conosco",
+            "line": 12,
+            "name": "clico no botão Contato",
             "match": {
-              "location": "TrabalheSteps.clico_no_botão_Trabalhe_Conosco()"
+              "location": "ContatoSteps.clico_no_botão_Contato()"
             },
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 1153386100,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "clico no botão Ver Vagas Abertas",
-            "match": {
-              "location": "TrabalheSteps.clico_no_botão_Ver_Vagas_Abertas()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 6074412600,
+              "duration": 30025790700,
               "status": "passed"
             },
             "line": 13,
-            "name": "clico no botão Pessoa analista de Testes automatizados",
+            "name": "clico no botão América do Sul",
             "match": {
-              "location": "TrabalheSteps.clico_no_botão_Pessoa_analista_de_Testes_automatizados()"
+              "location": "ContatoSteps.clico_no_botão_América_do_Sul()"
             },
             "keyword": "E "
           },
           {
             "result": {
-              "duration": 66107000,
+              "duration": 30051480800,
               "status": "passed"
             },
             "line": 14,
-            "name": "clico no botão Apply",
+            "name": "clico no botão Brasil",
             "match": {
-              "location": "TrabalheSteps.clico_no_botão_Apply()"
+              "location": "ContatoSteps.clico_no_botão_Brasil()"
             },
             "keyword": "E "
           },
           {
             "result": {
-              "duration": 940838900,
+              "duration": 31739900,
               "status": "passed"
             },
             "line": 15,
-            "name": "preencho os dados solicitados",
+            "name": "a aplicação deve exibir o contato da SoftExpert no Brasil",
             "match": {
-              "location": "TrabalheSteps.preencho_os_dados_solicitados()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 84800,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "clico no botão Submit Application",
-            "match": {
-              "location": "TrabalheSteps.clico_no_botão_Submit_Application()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 44400,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "a aplicação deve exibir a mensagem de sucesso",
-            "match": {
-              "location": "TrabalheSteps.a_aplicação_deve_exibir_a_mensagem_de_sucesso()"
+              "location": "ContatoSteps.a_aplicação_deve_exibir_o_contato_da_SoftExpert_no_Brasil()"
             },
             "keyword": "Então "
           }
         ],
         "tags": [
           {
-            "name": "@trabalhe-conosco"
+            "name": "@contato"
+          },
+          {
+            "name": "@contato-brasil"
           }
         ]
       }
     ],
-    "name": "Cadastrando para vaga de emprego",
-    "description": "    Eu como candidato para vaga\n    Quero me candidatar na vaga de analista de Testes Automatizados\n    Para fazer parte da equipe da SoftExpert",
-    "id": "cadastrando-para-vaga-de-emprego",
+    "name": "Acessando tela de contato da SoftExpert",
+    "description": "    Eu como possível cliente\n    Quero acessar a tela de contato da SoftExpert\n    Para poder entrar em contato com o setor de vendas",
+    "id": "acessando-tela-de-contato-da-softexpert",
     "keyword": "Funcionalidade",
-    "uri": "src/test/resources/features/trabalhe.feature",
-    "tags": []
+    "uri": "src/test/resources/features/contato.feature",
+    "tags": [
+      {
+        "name": "@contato",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 3
+        }
+      }
+    ]
   }
 ]
